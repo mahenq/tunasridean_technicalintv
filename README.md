@@ -1,4 +1,2 @@
 # Tunas Ridean Teknikal Intv
-Program menerima nilai awal M, kemudian memilih lawan yang tingkat kesulitannya tidak melebihi nilai M saat ini. Setiap kali berhasil mengalahkan lawan, nilai M bertambah sesuai hadiah yang diberikan.
-
-Tujuannya adalah mendapatkan nilai M sebesar mungkin dengan mengalahkan lawan yang memenuhi persyaratan.
+Program ini menyelesaikan persoalan penentuan tingkat kemahiran maksimal Juned menggunakan pendekatan greedy. Setiap musuh dipasangkan antara syarat tingkat kemahiran $A_i$ dan nilai penambahan $B_i$, lalu seluruh pasangan diurutkan menaik berdasarkan $A_i$ agar Juned dapat melawan musuh paling mudah terlebih dahulu. Program kemudian mengecek setiap lawan secara berurutan; selama kemahiran Juned saat itu memenuhi atau melampaui $A_i$, kemahirannya akan ditambah dengan $B_i$. Iterasi langsung dihentikan saat ditemukan lawan dengan $A_i$ yang lebih tinggi dari kemahiran Juned saat itu, lalu nilai akhir kemahiran dicetak sebagai output.
